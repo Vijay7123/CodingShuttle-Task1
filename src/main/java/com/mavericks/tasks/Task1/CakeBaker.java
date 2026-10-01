@@ -19,6 +19,7 @@ public class CakeBaker {
     }
 
 /*
+    method injection offically called as Setter Injection
     @Autowired
     public void setTypes(@Qualifier("berryFlavor") Frosting frosting, @Qualifier("berrySyrup")Syrup syrup) {
         this.frosting = frosting;

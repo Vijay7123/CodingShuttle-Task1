@@ -14,6 +14,8 @@ public class Task1Application implements CommandLineRunner {
     private final CakeBaker cakeBaker;
     //construtor -inejction.
     public Task1Application(CakeBaker cakeBaker) {
+        System.out.println("Executes first.");
+        System.out.println("If constructor executes first the cakebaker object is created by Spring and injected.");
         this.cakeBaker = cakeBaker;
     }
 
@@ -23,7 +25,7 @@ public class Task1Application implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-
+        System.out.println("Executes second.");
          cakeBaker.bakeCake();
 
     }
